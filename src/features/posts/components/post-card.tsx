@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const { Text, Title, Paragraph } = Typography;
 type PostCard = {
-  post: Post;
+  post?: Post;
 };
 
 export const PostCard = ({ post }: PostCard) => {
@@ -37,17 +37,17 @@ export const PostCard = ({ post }: PostCard) => {
               }}
               to="#"
             >
-              {post.author}
+              {post?.author}
             </Link>
-            <Text style={{ color: "#aaa" }}>{post.date_posted}</Text>
+            <Text style={{ color: "#aaa" }}>{post?.date_posted}</Text>
           </Flex>
           <Flex vertical align="start" style={{ marginTop: "12px" }}>
             <Title level={4} style={{ color: "#fff", margin: 0 }}>
-              {post.title}
+              {post?.title}
             </Title>
 
             <Paragraph style={{ color: "#ccc", marginTop: "8px" }}>
-              {post.content}
+              {post?.content}
             </Paragraph>
           </Flex>
         </Flex>
