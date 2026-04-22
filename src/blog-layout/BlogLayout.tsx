@@ -23,7 +23,7 @@ export default function BlogLayout({ theme, setTheme }: BlogLayoutProps) {
   return (
     <>
       <Layout style={{ minHeight: "100vh" }}>
-        {/* 🔥 HEADER */}
+        {/* HEADER */}
         {isMobile ? (
           <MenuUnfoldOutlined
             onClick={() => setIsOpen(true)}

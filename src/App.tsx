@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { ConfigProvider, theme as antdTheme } from "antd";
 import { useState } from "react";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import BlogLayout from "./blog-layout/BlogLayout";
 import PostPage from "./features/posts/pages/posts-page";
 
