@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { ConfigProvider, theme as antdTheme } from "antd";
 import { useState } from "react";
 import BlogLayout from "./blog-layout/BlogLayout";
+import PostPage from "./features/posts/pages/posts-page";
 
 export type ThemeType = "light" | "dark" | "auto";
 
@@ -29,7 +30,7 @@ export default function App() {
           path="/"
           element={<BlogLayout theme={theme} setTheme={setTheme} />}
         >
-          <Route index element={<div>Home Page</div>} />
+          <Route index element={<PostPage />} />
           <Route path="about" element={<div>About Page</div>} />
           <Route path="login" element={<div>Login Page</div>} />
         </Route>
