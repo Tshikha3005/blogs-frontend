@@ -4,6 +4,7 @@ import { useState } from "react";
 import BlogLayout from "./blog-layout/BlogLayout";
 import PostPage from "./features/posts/pages/posts-page";
 import { PostDetailsPage } from "./features/posts/pages/post-details-page";
+import { PostCreateForm } from "./features/posts/components/post-create-form";
 
 export type ThemeType = "light" | "dark" | "auto";
 
@@ -33,6 +34,7 @@ export default function App() {
         >
           <Route index element={<PostPage />} />
           <Route path={"/:id"} element={<PostDetailsPage />} />
+          <Route path={"/create/post"} element={<PostCreateForm />} />
           <Route path="about" element={<div>About Page</div>} />
           <Route path="login" element={<div>Login Page</div>} />
         </Route>

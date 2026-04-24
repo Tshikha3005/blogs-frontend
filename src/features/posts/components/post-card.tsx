@@ -35,7 +35,7 @@ export const PostCard = ({ post }: PostCard) => {
                 color: "#3c89e8",
                 marginRight: "0.5rem",
               }}
-              to="#"
+              to={`/${post?.id}`}
             >
               {post?.author}
             </Link>

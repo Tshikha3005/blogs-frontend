@@ -9,3 +9,9 @@ export type Post = {
 export type PostsResponse = {
   data: Post[];
 };
+
+export type PostFormValues = {
+  title: string;
+  author: string;
+  content: string;
+};

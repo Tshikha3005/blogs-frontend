@@ -1,0 +1,12 @@
+.post-create-button {
+  width: 100px;
+  background: #141414;
+  border: 1px solid #404040;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+.post-create-button:hover {
+  border: 1px solid #3c89e8;
+  color: #3c89e8;
+}
